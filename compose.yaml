@@ -12,3 +12,17 @@ services:
       - 8080:8080
     depends_on:
       - apacheds
+
+  # remember: import Dump.sql + add archemy user
+  db:
+    image: mysql:8.0.16
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+      - 3306:3306
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:

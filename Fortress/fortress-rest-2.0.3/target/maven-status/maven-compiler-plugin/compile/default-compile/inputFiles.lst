@@ -1,0 +1,16 @@
+/home/user/Downloads/fortress-rest-2.0.3/src/main/java/org/apache/directory/fortress/rest/AbstractMgrImpl.java
+/home/user/Downloads/fortress-rest-2.0.3/src/main/java/org/apache/directory/fortress/rest/DelegatedReviewMgrImpl.java
+/home/user/Downloads/fortress-rest-2.0.3/src/main/java/org/apache/directory/fortress/rest/FortressServiceImpl.java
+/home/user/Downloads/fortress-rest-2.0.3/src/main/java/org/apache/directory/fortress/rest/JacksonFieldOnlyMapper.java
+/home/user/Downloads/fortress-rest-2.0.3/src/main/java/org/apache/directory/fortress/rest/SecurityOutFaultInterceptor.java
+/home/user/Downloads/fortress-rest-2.0.3/src/main/java/org/apache/directory/fortress/rest/AdminMgrImpl.java
+/home/user/Downloads/fortress-rest-2.0.3/src/main/java/org/apache/directory/fortress/rest/FortressService.java
+/home/user/Downloads/fortress-rest-2.0.3/src/main/java/org/apache/directory/fortress/rest/DelegatedAccessMgrImpl.java
+/home/user/Downloads/fortress-rest-2.0.3/src/main/java/org/apache/directory/fortress/rest/ReviewMgrImpl.java
+/home/user/Downloads/fortress-rest-2.0.3/src/main/java/org/apache/directory/fortress/rest/FortressInterceptor.java
+/home/user/Downloads/fortress-rest-2.0.3/src/main/java/org/apache/directory/fortress/rest/AccessMgrImpl.java
+/home/user/Downloads/fortress-rest-2.0.3/src/main/java/org/apache/directory/fortress/rest/AuditMgrImpl.java
+/home/user/Downloads/fortress-rest-2.0.3/src/main/java/org/apache/directory/fortress/rest/ConfigMgrImpl.java
+/home/user/Downloads/fortress-rest-2.0.3/src/main/java/org/apache/directory/fortress/rest/PswdPolicyMgrImpl.java
+/home/user/Downloads/fortress-rest-2.0.3/src/main/java/org/apache/directory/fortress/rest/DelegatedAdminMgrImpl.java
+/home/user/Downloads/fortress-rest-2.0.3/src/main/java/org/apache/directory/fortress/rest/GroupMgrImpl.java

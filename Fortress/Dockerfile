@@ -37,6 +37,7 @@ CMD (/usr/local/tomcat/bin/catalina.sh run &) ; \
     cd /usr/local/tomcat/fortress-core-2.0.3 && \
     mvn clean install && \
     mvn install -Dload.file=./ldap/setup/refreshLDAPData.xml && \
+    mvn install -Dload.file=./ldap/setup/DelegatedAdminManagerLoad.xml && \
     cd /usr/local/tomcat/fortress-web-2.0.3 && \
     mvn clean install -Dload.file=./src/main/resources/FortressWebDemoUsers.xml tomcat:deploy && \
     cd /usr/local/tomcat/fortress-rest-2.0.3 && \

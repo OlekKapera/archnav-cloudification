@@ -1,0 +1,63 @@
+<AM MomVer="0" ver="10">
+   <cd/>
+   <TXN Def="0" New="0" Lok="2" tsi="0" pcid="24"/>
+   <CONN/>
+   <VO>
+      <VO sig="1" qf="0" RS="0" Def="com.archemy.searchapp.model.queries.AreasVO" Name="AreasVO1"/>
+      <VO sig="2" qf="0" RS="0" Def="com.archemy.searchapp.model.queries.DimensionsVO" Name="DimensionsVO1"/>
+      <VO sig="3" qf="0" RS="0" Def="com.archemy.searchapp.model.queries.DomainsVO" Name="DomainsVO1"/>
+      <VO sig="4" qf="0" RS="0" Def="com.archemy.searchapp.model.queries.IadsVO" Name="IadsVO1"/>
+      <VO sig="5" qf="0" RS="0" Def="com.archemy.searchapp.model.queries.KadsVO" Name="KadsVO1"/>
+      <VO sig="6" qf="0" RS="0" Def="com.archemy.searchapp.model.queries.KadDimensionsAreaVO" Name="KadDimensionsAreaVO1"/>
+      <VO sig="7" qf="0" ut="0" da="1" cs="0" It="1" Sz="25" im="1" Ex="1" Def="com.archemy.searchapp.model.queries.KADDimensionsAreaTempVO" Name="KADDimensionsAreaTempVO1"/>
+      <VO sig="8" qf="0" RS="0" Def="com.archemy.searchapp.model.lookups.AreaParentIdLookupVO" Name="AreaParentIdLookupVO1"/>
+      <VO sig="9" qf="0" RS="0" Def="com.archemy.searchapp.model.lookups.AreaChildLookupVO" Name="AreaChildLookupVO1"/>
+      <VO sig="10" qf="0" ut="0" cs="12" It="1" Sz="-1" St="0" im="1" Ex="1" Def="com.archemy.searchapp.model.lookups.DimensionsFilteredByDomainVO" Name="DimensionsFilteredByDomainVO1">
+         <exArgs count="1">
+            <arg type="java.lang.Integer">
+               <![CDATA[1]]>
+            </arg>
+         </exArgs>
+         <rsvars>
+            <bDomainId>1</bDomainId>
+         </rsvars>
+         <rsq>
+            <![CDATA[SELECT DimensionsEO.DIMENSION_ID,         DimensionsEO.DIMENSION_NAME,         DimensionsEO.DOMAIN_ID FROM dimensions DimensionsEO WHERE  domain_id=?]]>
+         </rsq>
+         <Key>
+            <![CDATA[00010000000AACED0005770400000001]]>
+         </Key>
+      </VO>
+      <VO sig="11" qf="0" ut="0" da="1" cs="5" It="1" Sz="25" St="0" im="1" Ex="1" Def="com.archemy.searchapp.model.lookups.DomainLookupVO" Name="DomainLookupVO1">
+         <rsq>
+            <![CDATA[SELECT DomainsEO.DOMAIN_DESCRIPTION,         DomainsEO.DOMAIN_ID,         DomainsEO.DOMAIN_NAME FROM domains DomainsEO]]>
+         </rsq>
+         <Key>
+            <![CDATA[00010000000AACED0005770400000001]]>
+         </Key>
+      </VO>
+      <VO sig="12" qf="0" ut="0" da="1" cs="0" It="1" Sz="25" im="1" Ex="1" Def="com.archemy.searchapp.model.queries.KadSearchTransVO" Name="KadSearchTransVO1"/>
+      <VO sig="13" qf="0" RS="0" Def="com.archemy.searchapp.model.queries.KadTempVO" Name="KadTempVO1"/>
+      <VO sig="14" qf="0" RS="0" Def="com.archemy.searchapp.model.queries.KadsVO" Name="KadsVO2"/>
+      <VO sig="15" qf="0" RS="0" Def="com.archemy.searchapp.model.queries.DomainsVO" Name="DomainsVO2"/>
+      <VO sig="16" qf="0" RS="0" Def="com.archemy.searchapp.model.queries.KadsVO" Name="KadsVO3"/>
+      <VO sig="17" qf="0" RS="0" Def="com.archemy.searchapp.model.queries.DimensionsVO" Name="DimensionsVO2"/>
+      <VO sig="18" qf="0" RS="0" Def="com.archemy.searchapp.model.queries.AreasVO" Name="AreasVO2"/>
+      <VO sig="19" qf="0" ut="0" da="1" cs="6" It="1" Sz="-1" St="0" im="1" Ex="1" Def="com.archemy.searchapp.model.lookups.BusinessProblemLookupVO" Name="BusinessProblemLookupVO1">
+         <rsq>
+            <![CDATA[SELECT RecurringBusProblemEO.BUSINESS_PROBLEM,         RecurringBusProblemEO.ID FROM recurring_bus_problem RecurringBusProblemEO]]>
+         </rsq>
+         <Key>
+            <![CDATA[00010000000AACED0005770400000001]]>
+         </Key>
+      </VO>
+      <VO sig="20" qf="0" RS="0" Def="com.archemy.searchapp.model.queries.KadRegistrationVO" Name="KadRegistrationVO1"/>
+      <VO sig="21" qf="0" RS="0" Def="com.archemy.searchapp.model.queries.SummaryUsageStatisticsVO" Name="SummaryUsageStatisticsVO1"/>
+      <VO sig="22" qf="0" RS="0" Def="com.archemy.searchapp.model.queries.UsageStatisticsVO" Name="UsageStatisticsVO1"/>
+      <VO sig="23" qf="0" RS="0" Def="com.archemy.searchapp.model.queries.CustomerInfoVO" Name="CustomerInfoVO1"/>
+      <VO sig="26" qf="0" RS="0" Def="com.archemy.searchapp.model.queries.RecurringBusProblemVO" Name="RecurringBusProblemVO1"/>
+      <VO sig="27" qf="0" RS="0" Def="com.archemy.searchapp.model.queries.RecurringBusProblemVO" Name="RecurringBusProblemVO2"/>
+      <VO sig="28" qf="0" RS="0" Def="com.archemy.searchapp.model.lookups.AreaParentIdLookupVO" Name="AreaParentIdLookupVO2"/>
+      <VO sig="29" qf="0" RS="0" Def="com.archemy.searchapp.model.queries.CustomerInfoAllVO" Name="CustomerInfoAllVO1"/>
+   </VO>
+</AM>

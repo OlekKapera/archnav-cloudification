@@ -24,5 +24,12 @@ services:
     volumes:
       - db_data:/var/lib/mysql
 
+  glassfish:
+    build:
+      context: glassfish
+    ports:
+      - 9999:9999
+      - 4848:4848
+
 volumes:
   db_data:

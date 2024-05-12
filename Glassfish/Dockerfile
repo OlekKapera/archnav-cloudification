@@ -42,9 +42,3 @@ EXPOSE 4848/tcp 8080/tcp
 # COPY archemy.ear $GLASSFISH_HOME/glassfish/domains/domain1/autodeploy/
 
 CMD asadmin start-domain -v
-# CMD tail -f /dev/null
-# ENTRYPOINT ["tail"]
-# CMD ["-f","/dev/null"]
-# jakarta-commons-el-1.jar
-# /home/user/Oracle/glassfish-5.0/glassfish5/glassfish/domains/domain1/applications/archemy/lib/../../../../oracle_common/modules/thirdparty/groovy-all-2.5.6.ja
-# groovy-dateutil-2.5.6.jar

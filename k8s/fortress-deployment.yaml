@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.33.0 (HEAD)
+  labels:
+    io.kompose.service: fortress
+  name: fortress
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: fortress
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: 1.33.0 (HEAD)
+      labels:
+        io.kompose.network/archnav-cloudification-default: "true"
+        io.kompose.service: fortress
+    spec:
+      containers:
+        - image: djolo2211/archnav_cloudification-fortress:1.0
+          name: fortress
+          ports:
+            - containerPort: 8080
+              hostPort: 8080
+              protocol: TCP
+      restartPolicy: Always

@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.33.0 (HEAD)
+  labels:
+    io.kompose.service: glassfish
+  name: glassfish
+spec:
+  type: LoadBalancer
+  ports:
+    - name: "9999"
+      port: 9999
+      targetPort: 9999
+    - name: "4848"
+      port: 4848
+      targetPort: 4848
+  selector:
+    io.kompose.service: glassfish

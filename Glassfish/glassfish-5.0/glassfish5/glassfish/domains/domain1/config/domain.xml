@@ -54,7 +54,7 @@
       <property name="Password" value="password"></property>
       <property name="User" value="archemy"></property>
       <property name="DatabaseName" value="archemy"></property>
-      <property name="ServerName" value="localhost"></property>
+      <property name="ServerName" value="db.cf4quq608cyd.us-east-1.rds.amazonaws.com"></property>
       <property name="Port" value="3306"></property>
       <property name="useSSL" value="false"></property>
     </jdbc-connection-pool>

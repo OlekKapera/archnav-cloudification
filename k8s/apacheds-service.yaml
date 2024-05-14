@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.33.0 (HEAD)
+  labels:
+    io.kompose.service: apacheds
+  name: apacheds
+spec:
+  type: LoadBalancer
+  ports:
+    - name: "10389"
+      port: 10389
+      targetPort: 10389
+  selector:
+    io.kompose.service: apacheds

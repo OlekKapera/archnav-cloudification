@@ -36,7 +36,7 @@ RUN echo "----- CREATE PASSWORD FILE --------------------" && \
 # Delete ssl classes conflicting with those in JAVA_HOME
 RUN cd $GLASSFISH_HOME/modules/endorsed && zip grizzly-npn-bootstrap.jar -d sun/security/ssl/*.class
 
-EXPOSE 4848/tcp 8080/tcp
+EXPOSE 4848/tcp 9999/tcp
 
 # Copy app file
 # COPY archemy.ear $GLASSFISH_HOME/glassfish/domains/domain1/autodeploy/
